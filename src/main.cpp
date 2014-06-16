@@ -40,8 +40,8 @@ static CBigNum bnProofOfStakeLimit(~uint256(0) >> 2);
 static CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 static CBigNum bnProofOfStakeLimitTestNet(~uint256(0) >> 30);
 
-unsigned int nStakeMinAge = 60 * 60 * 24 * 5;	//5D, minimum age for coin age:  5 Days till PoW over
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 8;	//8D, stake age of full weight:  8 Days tiil Pow over
+unsigned int nStakeMinAge = 60 * 60 * 1 * 1;	//1H, minimum age for coin age: 
+unsigned int nStakeMaxAge = 60 * 60 * 8 * 1;	//8H, stake age of full weight:
 unsigned int nStakeTargetSpacing = 60;			// 60 sec block spacing
 
 int64 nChainStartTime = 1402729860;
@@ -938,7 +938,7 @@ static const int64 nMinSubsidy = 1 * COIN;
 // miner's coin base reward based on nBits
 int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = 450 * COIN;
+    int64_t nSubsidy = 1000 * COIN;
 
     if(nHeight <= 50)
 	nSubsidy = 2000 * COIN; // first 50 blocks are 2000 coin reward

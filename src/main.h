@@ -37,7 +37,7 @@ static const int64 MAX_MONEY = 12000000 * COIN;			// 12 Million
 static const int64 CIRCULATION_MONEY = MAX_MONEY;
 static const double TAX_PERCENTAGE = 0.00; //no tax
 static const int64 MAX_CLOAK_PROOF_OF_STAKE = 0.10 * COIN;	// 10% annual interest
-static const int CUTOFF_POW_BLOCK = 10050;
+static const int CUTOFF_POW_BLOCK = 4000;
 
 static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 
@@ -54,7 +54,7 @@ static const int fHaveUPnP = false;
 static const uint256 hashGenesisBlockOfficial("0x00000c16d62b349d0a3dcd85ba7de4acd1ff86393b0a9586675a0d03a610889b");
 static const uint256 hashGenesisBlockTestNet ("0x00000c16d62b349d0a3dcd85ba7de4acd1ff86393b0a9586675a0d03a610889b");
 
-static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours
+static const int64 nMaxClockDrift = 1 * 60 * 60;        // two hours
 
 extern CScript COINBASE_FLAGS;
 
